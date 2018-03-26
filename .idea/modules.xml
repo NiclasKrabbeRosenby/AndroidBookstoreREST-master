@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidBookstoreREST-master.iml" filepath="$PROJECT_DIR$/AndroidBookstoreREST-master.iml" />
+      <module fileurl="file://C:\Users\krabb_000\Desktop\4.Semester\Mobile-Programmering\Januar\AndroidBookstoreREST-master\BookstoreREST.iml" filepath="C:\Users\krabb_000\Desktop\4.Semester\Mobile-Programmering\Januar\AndroidBookstoreREST-master\BookstoreREST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

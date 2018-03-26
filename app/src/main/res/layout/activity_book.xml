@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dk.easj.anbo.bookstorerest.BookActivity">
+
+    <TextView
+        android:id="@+id/book_heading_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/book_created_edittext"
+                android:text="Date" />
+
+            <EditText
+                android:id="@+id/book_created_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_birdid_edittext"
+                android:text="Bird ID" />
+
+            <EditText
+                android:id="@+id/book_birdid_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Bird ID"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_comment_edittext"
+                android:text="Comment" />
+
+            <EditText
+                android:id="@+id/book_comment_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Comment"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_latitude_edittext"
+                android:text="Latitude" />
+
+            <EditText
+                android:id="@+id/book_latitude_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_longitude_edittext"
+                android:text="Longitude" />
+
+            <EditText
+                android:id="@+id/book_longitude_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Longitude"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_placename_edittext"
+                android:text="Placename" />
+
+            <EditText
+                android:id="@+id/book_placename_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Placename"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_population_edittext"
+                android:text="Population" />
+
+            <EditText
+                android:id="@+id/book_population_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Population"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_userid_edittext"
+                android:text="UserID" />
+
+            <EditText
+                android:id="@+id/book_userid_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="User ID"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_namedanish_edittext"
+                android:text="NameDanish" />
+
+            <EditText
+                android:id="@+id/book_namedanish_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="NameDanish"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/book_nameenglish_edittext"
+                android:text="NameEnglish" />
+
+            <EditText
+                android:id="@+id/book_nameenglish_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="NameEnglish"
+                android:inputType="textCapWords" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateBook"
+                android:text="Update" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteBook"
+                android:text="Delete" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="back"
+                android:text="Back" />
+
+            <TextView
+                android:id="@+id/book_message_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
