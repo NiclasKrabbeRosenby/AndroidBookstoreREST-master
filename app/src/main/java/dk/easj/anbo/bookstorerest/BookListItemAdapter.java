@@ -28,8 +28,8 @@ public class BookListItemAdapter extends ArrayAdapter<Book> {
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         Book book = getItem(position);
-        String title = book.getNameDanish();
-        String author = book.getComment();
+        String NameDanish = book.getNameDanish();
+        String Comment = book.getComment();
         LinearLayout bookView;
         if (convertView == null) {
             bookView = new LinearLayout(getContext());
@@ -41,8 +41,8 @@ public class BookListItemAdapter extends ArrayAdapter<Book> {
         }
         TextView titleView = bookView.findViewById(R.id.booklist_item_title);
         TextView authorView = bookView.findViewById(R.id.booklist_item_author);
-        titleView.setText(title);
-        authorView.setText(" by " + author);
+        titleView.setText(NameDanish);
+        authorView.setText(" by " + Comment);
         return bookView;
     }
 }

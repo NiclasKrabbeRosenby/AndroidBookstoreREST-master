@@ -26,7 +26,8 @@ public class BookActivity extends AppCompatActivity {
         book = (Book) intent.getSerializableExtra("BOOK");
 
         TextView headingView = findViewById(R.id.book_heading_textview);
-        headingView.setText("Book Id=" + book.getId());
+        headingView.setText(book.getUserid());
+        //headingView.setText(String.valueOf(book.getUserid()));
 
         createdView = findViewById(R.id.book_created_edittext);
         createdView.setText(book.getCreated());
@@ -50,7 +51,7 @@ public class BookActivity extends AppCompatActivity {
         populationView.setText(book.getPopulation());
 
         useridView = findViewById(R.id.book_userid_edittext);
-        useridView.setText(book.getUserid());
+        useridView.setText(book.getId());
 
         namedanishView = findViewById(R.id.book_namedanish_edittext);
         namedanishView.setText(book.getNameDanish());
@@ -61,7 +62,7 @@ public class BookActivity extends AppCompatActivity {
 
     public void deleteBook(View view) {
         DeleteTask task = new DeleteTask();
-        task.execute("http://birdobservationservice.azurewebsites.net/Service1.svc/observations/" + book.getId());
+        task.execute("http://birdobservationservice.azurewebsites.net/Service1.svc/observations/" + book.getUserid());
         finish();
     }
 

@@ -24,13 +24,13 @@ public class Book implements Serializable {
     private double longitude;
 
     @SerializedName("Placename")
-    private double placename;
+    private String placename;
 
     @SerializedName("Population")
     private int population;
 
     @SerializedName("UserID")
-    private int userid;
+    private String userid;
 
     @SerializedName("NameDanish")
     private String namedanish;
@@ -41,7 +41,7 @@ public class Book implements Serializable {
     public Book() {
     }
 
-    public Book(int id, String created, int birdid, String comment, double latitude, double longitude, double placename, int population, int userid, String namedanish, String nameenglish) {
+    public Book(int id, String created, int birdid, String comment, double latitude, double longitude, String placename, int population, String userid, String namedanish, String nameenglish) {
         this.id = id;
         this.created = created;
         this.birdid = birdid;
@@ -80,7 +80,7 @@ public class Book implements Serializable {
         this.longitude = longitude;
     }
 
-    public void setPlacename(double placename) {
+    public void setPlacename(String placename) {
         this.placename = placename;
     }
 
@@ -88,7 +88,7 @@ public class Book implements Serializable {
         this.population = population;
     }
 
-    public void setUserid(int userid) {
+    public void setUserid(String userid) {
         this.userid = userid;
     }
 
@@ -125,15 +125,11 @@ public class Book implements Serializable {
         return longitude;
     }
 
-    public double getPlacename() {
-        return placename;
-    }
+    public String getPlacename() { return placename;  }
 
-    public int getPopulation() {
-        return population;
-    }
+    public int getPopulation() { return population; }
 
-    public int getUserid() {
+    public String getUserid() {
         return userid;
     }
 
